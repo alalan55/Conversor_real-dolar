@@ -1,5 +1,9 @@
 <template>
+<Navbar/>
 <div class="container">
+    <div class="logo">
+        <i class="fas fa-dollar-sign"></i>
+    </div>
     <div class="entradas">
         <input type="number" placeholder="Quantidade em reais" class="entrada" v-model="valorReal">
         <input type="number" placeholder="Cotação do dolar" class="entrada" v-model="valorDolar">
@@ -19,6 +23,9 @@
     
 </template>
 <script>
+
+import Navbar from './Navbar';
+
 export default {
     data(){
         return{
@@ -26,6 +33,9 @@ export default {
             valorDolar: '',
             resultado: ''
         }
+    },
+    components:{
+        Navbar  
     },
     methods:{
         fazerCalculo(){
@@ -37,11 +47,15 @@ export default {
             this.valorDolar = '';
             this.resultado = '';
         }
-    }
-    
+    },   
 }
 </script>
 <style scoped>
+.logo{
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 1%;
+}
 .container{
     display: flex;
     width: 100%;
