@@ -47,20 +47,7 @@ export default {
             this.valorDolar = '';
             this.resultado = '';
         }
-    },
-    watch:{
-        // valorReal: function(){
-        //      this.valorReal = '';
-        //     this.valorDolar = '';
-        //     this.resultado = '';
-        // },
-        // valorDolar: function(){
-        //       this.valorReal = '';
-        //     this.valorDolar = '';
-        //     this.resultado = '';
-        // }
-    }
-    
+    },   
 }
 </script>
 <style scoped>
